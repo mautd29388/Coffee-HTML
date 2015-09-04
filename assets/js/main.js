@@ -71,6 +71,8 @@
 		}// End Nivo
 		
 			
+		// Services
+		var $check_click = false;
 		$('.section.services').on('click', 'li.service:not(.active)', function (e) {
 			e.preventDefault();
 			
@@ -85,7 +87,18 @@
 				
 			}
 			
+			$check_click = true;
 		});
+		
+		$('.section.services').on('click', function (e) {
+			e.preventDefault();
+			
+			if ( $check_click == false )
+				$('#services-item').find('li.service').removeClass('active');
+			
+			$check_click = false;
+		});
+		
 		
 		// Load Menus
 		var $menus = $('#menus');

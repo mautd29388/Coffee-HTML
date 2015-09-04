@@ -318,6 +318,14 @@ Content Tabel
 		width: 100%;
 		margin-top: 20px;
 	}
+	.navbar-nav > li .mega-menu, 
+	.navbar-nav > li .dropdown{
+		-webkit-transition: none;
+		transition: none;
+		
+		  -webkit-animation-name: none;
+  		animation-name: none;
+	}
 	.nivo-caption-content {
 	    bottom: 20px;
 	    left: 15%;
@@ -554,7 +562,13 @@ Content Tabel
 		margin-top: 10px;
 	}
 	.header-top{
-		margin-bottom: 10px;
+		margin-bottom: 0;
+	}
+	#logo img{
+		width: 50%;
+	}
+	.page-header .post-thumbnail {
+	    height: 175px;
 	}
 	.page-header .title{
 		padding-top: 35px;
