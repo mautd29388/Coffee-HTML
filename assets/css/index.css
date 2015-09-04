@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+  
+/*
+
+Folks - Responsive Creative Template 
+
+Content Tabel
++---------------+
+
+-General Classes
+-Elements
+-Common-Stuff
+ 
+*/
+img{
+	max-width: 100%;
+}
+p{
+	margin: 0;
+}
+.header{
+	background-image: url('../../images/about/about.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto 100%; 
+	background-size: 100% auto;
+    padding: 100px 0;
+    text-align: center;
+}
+article{
+	padding: 50px;
+}
+article a{
+	border: 1px solid #EEE;
+	background-color: #fafafa;
+    display: inline-block;
+    height: 500px;
+    position: relative;
+    text-indent: -9999px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
+    background-image: url('../../images/screenshots/style_v1.jpg');
+    
+    -webkit-transition: all 3.5s;
+    transition: all 3.5s;
+    outline: none !important;
+}
+article.style-v2 a{
+	background-image: url('../../images/screenshots/style_v2.jpg');
+}
+article.style-v3 a{
+	background-image: url('../../images/screenshots/style_v3.jpg');
+}
+article a:hover{
+	background-position: center 100%;
+}
+h3{
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}
+.copyright{
+	line-height: 56px;
+	font-size: 14px;
+	text-align: center;
+	border-top: 1px solid;
+}
