@@ -19,13 +19,19 @@ Content Tabel
 .widget-gallery li figure a:after,
 .footer-info button,
 .gallery-v1 .gallery-inner,
-body:before{
+body:before,
+.style-v3 .navbar-toggle .icon-bar,
+.galleries .gallery-item figure .gallery-icon a,
+.entry-meta:after{
 	background-color: #000; 
 }
 .footer-info .social li a,
 .menus .menu-title,
 .navbar-toggle .icon-bar,
-.filter-stuck{
+.filter-stuck,
+.nivo-controlNav a,
+#services-item li:after,
+#services-item li:before{
 	background-color: #FFF;
 }
 .info-recipe,
@@ -44,6 +50,10 @@ body:before{
 .navbar-nav > li .mega-menu-inner,
 .navbar-nav > li .dropdown{
 	background-color: #ebebeb;
+}
+.line-title:before,
+.line-title:after{
+	background-color: #CCC;
 }
 /* Text Color */
 body,
@@ -77,7 +87,10 @@ body,
 .nivo-caption .title,
 .gallery-v1 h3.title,
 .gallery-meta .sharethis .sharethis-icon,
-.galleries-v1 .gallery-v1 .close:hover{
+.galleries-v1 .gallery-v1 .close:hover,
+#services-item li aside,
+.page-header .title,
+.galleries .gallery-item figure .gallery-icon a{
 	color: #FFF;
 }
 .header-left,

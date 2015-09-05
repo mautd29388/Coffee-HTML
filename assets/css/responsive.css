@@ -57,8 +57,11 @@ Content Tabel
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-		.navbar-nav > li {
+	.navbar-nav > li {
 	    margin: 0 20px;
+	}
+	.style-v3 .navbar-nav > li{
+		margin: 0 15px;
 	}
 	.nivo-controlNav{
 		bottom: 0;
@@ -153,8 +156,17 @@ Content Tabel
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-		.navbar-nav > li {
+	.style-v3 .logo {
+		width: 135px;
+	}
+	.style-v3 #primary-navigation{
+		margin-left: 135px;
+	}
+	.navbar-nav > li {
 	    margin: 0 20px;
+	}
+	.style-v3 .navbar-nav > li {
+	    margin: 0 5px;
 	}
 	.nivo-controlNav{
 		bottom: 0;
@@ -311,11 +323,30 @@ Content Tabel
 	.header-right {
 	    text-align: right;
 	}
-	#logo{
+	.style-v3 .header-right{
+		display: none;
+	}
+	.logo{
 		display: inline-block;
 		width: 100%;
 		margin-top: 20px;
 	}
+	.style-v3 .logo{
+    	display: block;
+    	margin: 0;
+    	width: 150px;
+	}
+	.style-v3 #primary-navigation {
+    	display: block;
+    	margin: 0;
+	}
+	.style-v3 .navbar-header {
+    	float: right;
+    	padding: 14px 0;
+    }
+    .style-v3 .navbar-collapse{
+    	color: #FFF;
+    }
 	.navbar-nav > li .mega-menu, 
 	.navbar-nav > li .dropdown{
 		-webkit-transition: none;
@@ -447,11 +478,23 @@ Content Tabel
 		text-align: left;
 		max-height: 250px;
 		position: relative;
-		z-index: 9999;
+		z-index: 2;
 	}
 	.infoUs figure{
 		position: relative;
 		z-index: 1;
+		margin-bottom: 20px;
+	}
+	.style-v3 #navbar {
+	    left: 0;
+	    padding: 15px 0 0;
+	    position: absolute;
+	    right: 0;
+	    top: 100%;
+	    width: 100%;
+	}
+	.style-v3 .navbar-nav > li {
+	    padding: 0;
 	}
 	.navbar-nav > li .mega-menu, 
 	.navbar-nav > li .dropdown{
@@ -479,6 +522,10 @@ Content Tabel
 	.nivo-caption-content .desc{
 		display: none;
 	}
+	.style-v2 .nivo-caption-content .desc,
+	.style-v3 .nivo-caption-content .desc{
+		display: block;
+	}
     .page-header .title{
     	color: #000;
     	padding-top: 50px;
@@ -493,9 +540,22 @@ Content Tabel
 		max-width: none;
 	}
 	.ourMission figure {
-	    margin-bottom: 0;
+	    margin-bottom: 20px;
 	    margin-top: 0;
 	    text-align: center;
+	}
+	.ourPromise h1.title {
+	    padding-top: 20px;
+	}
+	.ourMethods figure {
+	    margin-bottom: 20px;
+	    padding-right: 0;
+	}
+	.menus h1.title {
+	    margin: 0 0 25px;
+	}
+	.menus .menu-thumbnail {
+	    margin: 0 0 20px;
 	}
 	.galleries .filter .button, 
 	.menus .filter .button{
@@ -524,10 +584,13 @@ Content Tabel
 		margin-left: 90px;
 	}
 	#map-canvas{
-		height: 300px;
+		height: 250px;
 	}
 	.page-content {
 	    padding-top: 35px;
+	}
+	.contact-content {
+	    margin: 0 0 50px;
 	}
 	.galleries .gallery-item.col-xs-6{
 		width: 49.5%;
@@ -554,16 +617,22 @@ Content Tabel
 		width: 100%;
 	}
 	#map-canvas{
-		height: 250px;
+		height: 200px;
 	}
-	#logo{
+	.logo{
 		margin-top: 10px;
+	}
+	.style-v3 .logo{
+		margin-top: 0;
 	}
 	.header-top{
 		margin-bottom: 0;
 	}
-	#logo img{
+	.logo img{
 		width: 50%;
+	}
+	.style-v3 .logo img{
+		width: 100%;
 	}
 	.page-header .post-thumbnail {
 	    height: 175px;
@@ -573,6 +642,22 @@ Content Tabel
 	}
 	.nivo-caption-content{
 		display: none;
+	}
+	.style-v2 .nivo-caption-content,
+	.style-v3 .nivo-caption-content{
+		top: 15%;
+		display: block;
+	}
+	.style-v2 .nivo-caption-content h1.title,
+	.style-v3 .nivo-caption-content h1.title{
+		font-size: 28px;
+	}
+	.style-v2 .nivo-caption-content .desc,
+	.style-v3 .nivo-caption-content .desc{
+		font-size: 16px;
+	}
+	.infoUs{
+		background-image: none !important;
 	}
 	#services-item {
     	min-height: 60px;
@@ -606,5 +691,21 @@ Content Tabel
 	}
 	.gallery-v1 .gallery-cell{
 		margin: 0 10px;
+	}
+	.latest .posts_list figure {
+	    float: none !important;
+	    margin: 0 0 15px !important;
+	    text-align: center;
+	    width: auto;
+	}
+	.info-recipe figure {
+	    float: none;
+	    text-align: center;
+	    width: auto;
+	}
+	.info-recipe .video-recipe li {
+	    float: none;
+	    padding: 0;
+	    width: auto;
 	}
 }
