@@ -1,10 +1,7 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-  
-/*
+/* 
+==========================================================================
 
-Aella Event Planner
+Author: mTheme
 
 Content Tabel
 +---------------+
@@ -12,10 +9,13 @@ Content Tabel
 -General Classes
 -Elements
 -Common-Stuff
- 
-*/
+
+========================================================================== */
 
 /* Background Color */
+.style-v3 .header-inner{
+	background-color: #fffaf4;
+}
 .widget-gallery li figure a:after,
 .footer-info button,
 .gallery-v1 .gallery-inner,
@@ -60,7 +60,8 @@ body,
 .comment-form input,
 .comment-form textarea,
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea,
+.style-v3 .header-right{
 	color: #999;
 }
 .comment-form button,
@@ -92,7 +93,8 @@ article.post .entry-left .social a{
 .modal-header .close:hover,
 .entry-meta a,
 h3.widgettitle,
-.sidebar .recent-comment-author{
+.sidebar .recent-comment-author,
+.style-v3 .header-inner{
 	color: #000;
 }
 .featured-color-text,

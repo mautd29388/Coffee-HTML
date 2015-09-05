@@ -1,10 +1,7 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-  
-/*
+/* 
+==========================================================================
 
-Travel
+Author: mTheme
 
 Content Tabel
 +---------------+
@@ -12,8 +9,10 @@ Content Tabel
 -General Classes
 -Elements
 -Common-Stuff
- 
-*/
+
+========================================================================== */
+
+
 body{
 	font-size: 15px;
 	line-height: 22px;
@@ -149,6 +148,23 @@ h1.title{
     top: 0;
     z-index: 2;
 }
+.style-v3 .header-inner{
+    height: 80px;
+    left: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+}
+.style-v3 .logo{
+    float: left;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.style-v3 .header-right{
+	float: right;
+	margin: 0;
+}
 .header-top{
 	margin-top: 55px;
 	margin-bottom: 20px;
@@ -159,6 +175,9 @@ h1.title{
     display: inline-block;
     margin: 0;
     padding: 0;	
+}
+.style-v3 #primary-navigation{
+	margin: 0 0 0 180px;
 }
 .header-left,
 .header-right{
@@ -189,6 +208,12 @@ h1.title{
 	padding-left: 5px;
     padding-right: 3px;
 }
+.style-v3 .header-right li a{
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 14px;
+	line-height: 80px;
+}
 #primary-navigation{
 	font-size: 16px;
 	text-transform: uppercase;
@@ -198,6 +223,9 @@ h1.title{
 }
 .navbar-nav > li{
 	margin: 0 30px;
+}
+.style-v3 .navbar-nav > li{
+	padding: 15px 0;
 }
 .navbar-nav > li > a{
 	padding-left: 0;
