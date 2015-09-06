@@ -60,7 +60,7 @@ Content Tabel
 	.navbar-nav > li {
 	    margin: 0 20px;
 	}
-	.style-v3 .navbar-nav > li{
+	.style-v2 .navbar-nav > li{
 		margin: 0 15px;
 	}
 	.nivo-controlNav{
@@ -156,15 +156,16 @@ Content Tabel
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.style-v3 .logo {
+	.style-v2 .logo {
 		width: 135px;
 	}
-	.style-v3 #primary-navigation{
+	.style-v2 #primary-navigation{
 		margin-left: 135px;
 	}
 	.navbar-nav > li {
 	    margin: 0 20px;
 	}
+	.style-v2 .navbar-nav > li,
 	.style-v3 .navbar-nav > li {
 	    margin: 0 5px;
 	}
@@ -323,7 +324,7 @@ Content Tabel
 	.header-right {
 	    text-align: right;
 	}
-	.style-v3 .header-right{
+	.style-v2 .header-right{
 		display: none;
 	}
 	.logo{
@@ -331,20 +332,41 @@ Content Tabel
 		width: 100%;
 		margin-top: 20px;
 	}
-	.style-v3 .logo{
+	.style-v2 .logo{
     	display: block;
     	margin: 0;
     	width: 150px;
 	}
-	.style-v3 #primary-navigation {
+	.style-v3 .logo {
+	    left: 0;
+	    margin: 0;
+	    position: absolute;
+	    right: auto;
+	    top: 0;
+	    width: auto;
+	}
+	.style-v3 .logo a{
+		left: auto;
+		margin: 0 !important;
+		display: block;
+		text-align: left;
+		width: 130px;
+	}
+	.style-v3 .header-left, 
+	.style-v3 .header-right{
+		display: none;
+	}
+	.style-v2 #primary-navigation,
+	.style-v3 #primary-navigation  {
     	display: block;
     	margin: 0;
 	}
+	.style-v2 .navbar-header,
 	.style-v3 .navbar-header {
     	float: right;
     	padding: 14px 0;
     }
-    .style-v3 .navbar-collapse{
+    .style-v2 .navbar-collapse{
     	color: #FFF;
     }
 	.navbar-nav > li .mega-menu, 
@@ -485,6 +507,7 @@ Content Tabel
 		z-index: 1;
 		margin-bottom: 20px;
 	}
+	.style-v2 #navbar,
 	.style-v3 #navbar {
 	    left: 0;
 	    padding: 15px 0 0;
@@ -493,8 +516,20 @@ Content Tabel
 	    top: 100%;
 	    width: 100%;
 	}
+	.style-v3 #navbar{
+		padding-top: 25px;
+	}
+	.style-v3 .navbar-nav{
+	    float: none;
+	    padding: 0 !important;
+	    text-align: left !important;
+	    width: auto;
+	    margin: 0;
+	}
+	.style-v2 .navbar-nav > li,
 	.style-v3 .navbar-nav > li {
 	    padding: 0;
+	    display: block;
 	}
 	.navbar-nav > li .mega-menu, 
 	.navbar-nav > li .dropdown{
@@ -522,8 +557,8 @@ Content Tabel
 	.nivo-caption-content .desc{
 		display: none;
 	}
-	.style-v2 .nivo-caption-content .desc,
-	.style-v3 .nivo-caption-content .desc{
+	.style-v3 .nivo-caption-content .desc,
+	.style-v2 .nivo-caption-content .desc{
 		display: block;
 	}
     .page-header .title{
@@ -622,7 +657,7 @@ Content Tabel
 	.logo{
 		margin-top: 10px;
 	}
-	.style-v3 .logo{
+	.style-v2 .logo{
 		margin-top: 0;
 	}
 	.header-top{
@@ -631,7 +666,7 @@ Content Tabel
 	.logo img{
 		width: 50%;
 	}
-	.style-v3 .logo img{
+	.style-v2 .logo img{
 		width: 100%;
 	}
 	.page-header .post-thumbnail {
@@ -643,17 +678,17 @@ Content Tabel
 	.nivo-caption-content{
 		display: none;
 	}
-	.style-v2 .nivo-caption-content,
-	.style-v3 .nivo-caption-content{
+	.style-v3 .nivo-caption-content,
+	.style-v2 .nivo-caption-content{
 		top: 15%;
 		display: block;
 	}
-	.style-v2 .nivo-caption-content h1.title,
-	.style-v3 .nivo-caption-content h1.title{
+	.style-v3 .nivo-caption-content h1.title,
+	.style-v2 .nivo-caption-content h1.title{
 		font-size: 28px;
 	}
-	.style-v2 .nivo-caption-content .desc,
-	.style-v3 .nivo-caption-content .desc{
+	.style-v3 .nivo-caption-content .desc,
+	.style-v2 .nivo-caption-content .desc{
 		font-size: 16px;
 	}
 	.infoUs{

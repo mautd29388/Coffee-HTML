@@ -146,26 +146,50 @@ h1.title{
     top: 0;
     z-index: 2;
 }
-.style-v3 .header-inner{
+.style-v2 .header-inner{
     height: 80px;
     left: auto;
     position: relative;
     right: auto;
     top: auto;
 }
-.style-v3 .logo{
+.style-v3 .header-inner{
+    left: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+}
+.style-v2 .logo{
     float: left;
     position: absolute;
     top: 0;
     z-index: 3;
 }
-.style-v3 .header-right{
+.style-v3 .logo{
+	position: relative;
+}
+.style-v3 .logo a{
+    left: 50%;
+    margin-left: -88px;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+.style-v2 .header-right{
 	float: right;
 	margin: 0;
 }
 .header-top{
 	margin-top: 55px;
 	margin-bottom: 20px;
+}
+.style-v3 .header-top{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style-v3 .header-left, 
+.style-v3 .header-right{
+	margin: 0;
 }
 #primary-navigation{
     border: 0 none;
@@ -174,10 +198,10 @@ h1.title{
     margin: 0;
     padding: 0;	
 }
-.style-v3 #primary-navigation{
+.style-v2 #primary-navigation{
 	margin: 0 0 0 180px;
 }
-.style-v3 #navbar{
+.style-v2 #navbar{
 	padding: 0;
 }
 .header-left,
@@ -209,7 +233,7 @@ h1.title{
 	padding-left: 5px;
     padding-right: 3px;
 }
-.style-v3 .header-right li a{
+.style-v2 .header-right li a{
 	padding-top: 0;
 	padding-bottom: 0;
 	font-size: 14px;
@@ -219,14 +243,29 @@ h1.title{
 	font-size: 16px;
 	text-transform: uppercase;
 }
+.style-v3 #primary-navigation{
+	display: block;
+}
 .navbar-brand{
 	display: none;
+}
+.style-v3 .navbar-nav{
+	width: 50%;
+	text-align: left;
+}
+.style-v3 .navbar-nav:FIRST-CHILD{
+	text-align: right;
 }
 .navbar-nav > li{
 	margin: 0 30px;
 }
+.style-v2 .navbar-nav > li,
 .style-v3 .navbar-nav > li{
 	padding: 15px 0;
+}
+.style-v3 .navbar-nav > li{
+	float: none;
+	display: inline-block;
 }
 .navbar-nav > li > a{
 	padding-left: 0;
@@ -292,7 +331,7 @@ h1.title{
 	display: none;
 }
 .nivo-controlNav{
-    bottom: 45px;
+    bottom: 10px;
     left: 0;
     position: absolute;
     right: 0;
@@ -330,8 +369,8 @@ h1.title{
     z-index: 3;
     text-align: center;
 }
-.style-v2 .nivo-caption-content,
-.style-v3 .nivo-caption-content{
+.style-v3 .nivo-caption-content,
+.style-v2 .nivo-caption-content{
 	bottom: auto;
 	top: 30%;
 }
@@ -1441,13 +1480,15 @@ h3.widgettitle{
 	margin-right: 3px;
 }
 
-.filter-stuck{
+.filter-stuck,
+.style-v2 #wrap .header-stuck,
+.style-v3 #wrap .header-stuck{
     border-bottom: 1px solid;
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 999;
 }
 
 /* Contact Form */

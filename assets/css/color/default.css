@@ -13,16 +13,17 @@ Content Tabel
 ========================================================================== */
 
 /* Background Color */
-.style-v3 .header-inner{
+.style-v2 .header-inner{
 	background-color: #fffaf4;
 }
 .widget-gallery li figure a:after,
 .footer-info button,
 .gallery-v1 .gallery-inner,
 body:before,
-.style-v3 .navbar-toggle .icon-bar,
+.style-v2 .navbar-toggle .icon-bar,
 .galleries .gallery-item figure .gallery-icon a,
-.entry-meta:after{
+.entry-meta:after,
+.style-v3 .header-inner{
 	background-color: #000; 
 }
 .footer-info .social li a,
@@ -71,7 +72,7 @@ body,
 .comment-form textarea,
 .contact-form input,
 .contact-form textarea,
-.style-v3 .header-right{
+.style-v2 .header-right{
 	color: #999;
 }
 .comment-form button,
@@ -107,7 +108,7 @@ article.post .entry-left .social a{
 .entry-meta a,
 h3.widgettitle,
 .sidebar .recent-comment-author,
-.style-v3 .header-inner{
+.style-v2 .header-inner{
 	color: #000;
 }
 .featured-color-text,
@@ -147,7 +148,8 @@ article.post .entry-left .social a:hover,
 /* Border Color */
 .latest .posts_list li,
 .gallery-v2 .gallery-meta,
-.filter-stuck{
+.filter-stuck,
+.style-v2 #wrap .header-stuck{
 	border-color: #EEE;
 }
 .gallery-meta .gallery-date,
@@ -181,7 +183,8 @@ blockquote{
 	border-color: #e27900;
 }
 .galleries .filter .button,
-.menus .filter .button{
+.menus .filter .button,
+.style-v3 #wrap .header-stuck{
 	border-color: #000;
 }
 .galleries .filter .button.active,

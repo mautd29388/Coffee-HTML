@@ -42,6 +42,18 @@
 		    	$(this).children().removeClass('fadeInUpMenu');
 		}); 
 		
+		// Header Style 3
+		if ( $('body.style-v3').length > 0 ) {	
+    		var $menu = $('body.style-v3').find('#navbar .navbar-nav'),
+    			//index = Math.round($item_menu.length/2), 
+    			//$parent = $item_menu.slice(index, index + 1),
+    			$logo = $('body.style-v3').find('#logo');
+    		
+    		$menu.css( {"padding-right": $logo.find('img').outerWidth()/2 + 30})
+    		.next().css( {"padding-left": $logo.find('img').outerWidth()/2 + 30, "padding-right": 0});
+    		
+    		$logo.find('a').css( {"margin-left": - $logo.find('img').outerWidth()/2});
+		} // End Header Style 3
 		
 		// Nivo Slider;
 		var $slider = $('#banner .slider-wrapper');
@@ -423,7 +435,18 @@
 		  element: $filter[0],
 		  wrapper: '<div class="filter-sticky" />',
 		  stuckClass: 'filter-stuck',
-		  offset: '-1'
+		  offset: '0'
+		});
+	}
+	
+	// Style v2 Header Sticky
+	var $header_inner = $('.style-v2 .header-inner, .style-v3 .header-inner');
+	if ($header_inner.length > 0) {
+		new Waypoint.Sticky({
+		  element: $header_inner[0],
+		  wrapper: '<div class="header-sticky" />',
+		  stuckClass: 'header-stuck',
+		  offset: '0'
 		});
 	}
 	
