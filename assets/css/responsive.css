@@ -255,7 +255,7 @@ Content Tabel
     	margin-top: 20px;
     }
     .page-header .title{
-    	color: #000;
+    	color: #000 !important;
     	padding-top: 50px;
     	position: static;
     }
@@ -562,7 +562,7 @@ Content Tabel
 		display: block;
 	}
     .page-header .title{
-    	color: #000;
+    	color: #000 !important;
     	padding-top: 50px;
     	position: static;
     }
@@ -664,7 +664,7 @@ Content Tabel
 		margin-bottom: 0;
 	}
 	.logo img{
-		width: 50%;
+		width: 165px;
 	}
 	.style-v2 .logo img{
 		width: 100%;
