@@ -27,20 +27,6 @@
 			});
 		});
 		
-	});
-	
-	
-	$(document).ready(function() {
-		
-		// Hover Menu
-		$('.navbar-nav > li .mega-menu').addClass('animated animation-duration-5');
-		$('.navbar-nav > li .dropdown').addClass('animated animation-duration-5');
-		
-		$(".navbar-nav > li").hover(function(){
-		    	$(this).children().addClass('fadeInUpMenu');
-		    }, function(){
-		    	$(this).children().removeClass('fadeInUpMenu');
-		}); 
 		
 		// Header Style 3
 		if ( $('body.style-v3').length > 0 ) {	
@@ -56,6 +42,21 @@
     		});
     		
 		} // End Header Style 3
+		
+	});
+	
+	
+	$(document).ready(function() {
+		
+		// Hover Menu
+		$('.navbar-nav > li .mega-menu').addClass('animated animation-duration-5');
+		$('.navbar-nav > li .dropdown').addClass('animated animation-duration-5');
+		
+		$(".navbar-nav > li").hover(function(){
+		    	$(this).children().addClass('fadeInUpMenu');
+		    }, function(){
+		    	$(this).children().removeClass('fadeInUpMenu');
+		}); 
 		
 		// Nivo Slider;
 		var $slider = $('#banner .slider-wrapper');
@@ -143,15 +144,17 @@
 		
 		
 		// Flickity slider
-		$('.gallery-about .gallery-flickity').imagesLoaded(function() {
-			$('.gallery-about .gallery-flickity').flickity({
-				freeScroll: true,
-				contain: true,
-				// disable previous & next buttons and dots
-				prevNextButtons: false,
-				pageDots: false,
+		if ( $('.gallery-about').length > 0 ) {
+			$('.gallery-about .gallery-flickity').imagesLoaded(function() {
+				$('.gallery-about .gallery-flickity').flickity({
+					freeScroll: true,
+					contain: true,
+					// disable previous & next buttons and dots
+					prevNextButtons: false,
+					pageDots: false,
+				});
 			});
-		});
+		}
 		
 		function gallery_flickity($gallery) {
 			

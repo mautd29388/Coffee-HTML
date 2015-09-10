@@ -168,7 +168,7 @@ Content Tabel
 	}
 	.style-v2 .navbar-nav > li,
 	.style-v3 .navbar-nav > li {
-	    margin: 0 5px;
+	    margin: 0 4px;
 	}
 	.nivo-controlNav{
 		bottom: 0;
@@ -574,6 +574,7 @@ Content Tabel
     .style-v2 .page-header .title,
     .style-v3 .page-header .title{
     	color: #FFF !important;
+		padding: 30px 0;
     }
     .page-header .post-thumbnail {
 	    height: 220px;
@@ -582,6 +583,11 @@ Content Tabel
 		height: 100%;
 		width: auto;
 		max-width: none;
+	}
+	.style-v2 .page-header .post-thumbnail img,
+	.style-v3 .page-header .post-thumbnail img{
+		height: auto;
+		width: 100%;
 	}
 	.ourMission figure {
 	    margin-bottom: 20px;
@@ -752,4 +758,8 @@ Content Tabel
 	    padding: 0;
 	    width: auto;
 	}
+	.style-v2 .page-header .title,
+    .style-v3 .page-header .title{
+		padding: 20px 0;
+    }
 }

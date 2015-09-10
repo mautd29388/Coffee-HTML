@@ -801,10 +801,13 @@ h1.title{
     right: 0;
     font-weight: bold;
 }
-.style-v2 .page-header .title,
-.style-v3 .page-header .title{
+.style-v2 .page-header .title{
 	position: static;
 	padding: 55px 0;
+}
+.style-v3 .page-header .title{
+	position: static;
+	padding: 100px 0 50px;
 }
 .style-v2 .page-header .title .line-title,
 .style-v3 .page-header .title .line-title{
