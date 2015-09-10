@@ -744,6 +744,14 @@ h1.title{
 	width: 49%;
 	padding: 0 15px;
 }
+.info-recipe .video-recipe li a{
+	padding: 0;
+	margin: 0;
+}
+.info-recipe .video-recipe li a img{
+	max-width: 100%;
+	height: auto;
+}
 .info-recipe .video-recipe h5{
 	text-transform: uppercase;
 	padding-top: 20px;
@@ -773,8 +781,15 @@ h1.title{
 	position: relative;
 	border: 0;
 }
-.page-header .post-thumbnail{
-	
+.style-v2 .page-header .post-thumbnail,
+.style-v3 .page-header .post-thumbnail{
+	 bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
 }
 .page-header .post-thumbnail img{
 }
@@ -785,6 +800,15 @@ h1.title{
     position: absolute;
     right: 0;
     font-weight: bold;
+}
+.style-v2 .page-header .title,
+.style-v3 .page-header .title{
+	position: static;
+	padding: 55px 0;
+}
+.style-v2 .page-header .title .line-title,
+.style-v3 .page-header .title .line-title{
+	margin: 0;
 }
 .ourMission {
 	overflow: visible;
@@ -805,6 +829,7 @@ h1.title{
 
 .gallery-about{
 	padding: 0;
+	height: 360px;
 }
 .gallery-about .gallery-flickity{
 	margin: 0;
@@ -1057,6 +1082,7 @@ h1.title{
 .gallery-meta .sharethis{
 	float: right;
 	position: relative;
+	display: none;
 }
 .gallery-v2 .gallery-meta .sharethis{
     clear: both;
@@ -1489,6 +1515,19 @@ h3.widgettitle{
     right: 0;
     top: 0;
     z-index: 999;
+}
+.style-v2 .filter-stuck{
+    top: 80px;
+    z-index: 998;	
+}
+.style-v3 .filter-stuck {
+    bottom: 0;
+    margin: 0;
+    top: auto;
+    z-index: 998;
+    
+    	-webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 /* Contact Form */

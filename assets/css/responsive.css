@@ -29,6 +29,10 @@ Content Tabel
 	}	
 }
 @media (min-width: 1900px) {
+	.nivo-caption-content{
+		bottom: auto;
+		top: 35%;
+	}
 	.service-effect li {
 		top: 200px;
 	}
@@ -140,9 +144,6 @@ Content Tabel
     	margin-top: 20px;
     }
     
-	.page-header .title{
-		bottom: 0;
-	}
 	.line-title{
 		margin-bottom: 15px;
     	padding-bottom: 10px;
@@ -258,6 +259,10 @@ Content Tabel
     	color: #000 !important;
     	padding-top: 50px;
     	position: static;
+    }
+    .style-v2 .page-header .title,
+    .style-v3 .page-header .title{
+    	color: #FFF !important;
     }
     
     .ourMission figure {
@@ -565,6 +570,10 @@ Content Tabel
     	color: #000 !important;
     	padding-top: 50px;
     	position: static;
+    }
+    .style-v2 .page-header .title,
+    .style-v3 .page-header .title{
+    	color: #FFF !important;
     }
     .page-header .post-thumbnail {
 	    height: 220px;

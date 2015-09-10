@@ -48,11 +48,13 @@
     			//index = Math.round($item_menu.length/2), 
     			//$parent = $item_menu.slice(index, index + 1),
     			$logo = $('body.style-v3').find('#logo');
+    		$logo.imagesLoaded(function() {
+	    		$menu.css( {"padding-right": $logo.find('img').outerWidth()/2 + 30})
+	    		.next().css( {"padding-left": $logo.find('img').outerWidth()/2 + 30, "padding-right": 0});
+	    		
+	    		$logo.find('a').css( {"margin-left": - $logo.find('img').outerWidth()/2});
+    		});
     		
-    		$menu.css( {"padding-right": $logo.find('img').outerWidth()/2 + 30})
-    		.next().css( {"padding-left": $logo.find('img').outerWidth()/2 + 30, "padding-right": 0});
-    		
-    		$logo.find('a').css( {"margin-left": - $logo.find('img').outerWidth()/2});
 		} // End Header Style 3
 		
 		// Nivo Slider;
@@ -102,12 +104,16 @@
 			$check_click = true;
 		});
 		
+		$('.section.services').on('click', 'li.service.active', function (e) {
+			
+			$check_click = true;
+		});
+		
 		$('.section.services').on('click', function (e) {
-			e.preventDefault();
-			
-			if ( $check_click == false )
+			if ( $check_click == false ) {
+				e.preventDefault();
 				$('#services-item').find('li.service').removeClass('active');
-			
+			}
 			$check_click = false;
 		});
 		
@@ -195,7 +201,8 @@
 					
 					$modal.find('.modal-body').html( $element );
 					
-					stButtons.locateElements();
+					// This Share
+					//stButtons.locateElements();
 					
 					gallery_flickity($modal.find('.gallery-flickity'));
 					
@@ -294,7 +301,8 @@
 							
 							$parent.find('.modal-body').html( $element );
 							
-							stButtons.locateElements();
+							// This Share
+							//stButtons.locateElements();
 							
 							gallery_flickity($parent.find('.gallery-flickity'));
 							
@@ -353,7 +361,8 @@
 							
 							$parent.append( $element );
 							
-							stButtons.locateElements();
+							//This Share
+							//stButtons.locateElements();
 							
 							// Flickity slider
 							gallery_flickity($parent.find('.gallery-flickity'));
@@ -429,7 +438,8 @@
 	
 	
 	// Filter Sticky
-	var $filter = $('#filter');
+	var $filter = $('#filter'),
+		$footer = $('#footer');
 	if ($filter.length > 0) {
 		new Waypoint.Sticky({
 		  element: $filter[0],
@@ -437,7 +447,24 @@
 		  stuckClass: 'filter-stuck',
 		  offset: '0'
 		});
+		
+		new Waypoint({
+			element: $footer[0],
+			handler: function(direction) {
+				//console.log(direction);
+				
+				if ( direction == 'down' ) {
+					$filter.removeClass('filter-stuck');
+				
+				} else if ( direction == 'up' ) {
+					$filter.addClass('filter-stuck');
+				}
+				
+			},
+			offset: '70%',
+		});
 	}
+	
 	
 	// Style v2 Header Sticky
 	var $header_inner = $('.style-v2 .header-inner, .style-v3 .header-inner');
