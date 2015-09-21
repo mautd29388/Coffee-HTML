@@ -1,14 +1,17 @@
-/* 
-==========================================================================
+/* ==========================================================================
 
 Author: mTheme
+Author URI: http://themeforest.net/user/mtheme_market
+Version: 1.0
+
 
 Content Tabel
 +---------------+
 
--General Classes
--Elements
--Common-Stuff
+* body
+	+ Header / #header
+	+ Main Content / #main-content
+	+ Footer / #footer
 
 ========================================================================== */
 
@@ -81,7 +84,7 @@ h1.title{
 }
 .line-title{
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-bottom: 20px;
     position: relative;
 }
@@ -258,6 +261,7 @@ h1.title{
 }
 .navbar-nav > li{
 	margin: 0 30px;
+	padding-bottom: 15px;
 }
 .style-v2 .navbar-nav > li,
 .style-v3 .navbar-nav > li{
@@ -592,7 +596,6 @@ h1.title{
     border-radius: 100%;
     bottom: 3px;
     box-sizing: border-box;
-    font-size: 14px;
     left: 3px;
     padding: 3px;
     position: absolute;
@@ -601,12 +604,13 @@ h1.title{
     top: 3px;
     z-index: 3;
     overflow: hidden;
+    line-height: 22px;
 }
 #services-item li .service-inner{
-	padding: 20px;
+	padding: 35px 20px 10px;
 }
 #services-item li aside h3{
-	margin: 0;
+	margin: 0 0 10px;
 	text-transform: uppercase;
 }
 #services-item li .service-inner a{
@@ -631,7 +635,7 @@ h1.title{
 /* Latest */
 .latest{
 	text-align: center;
-	padding-top: 130px;
+	/*padding-top: 130px;*/
 }
 .latest .posts_list{
 	list-style: none;
@@ -667,7 +671,6 @@ h1.title{
 .widget-gallery ul{
 	list-style: none;
 	padding: 0;
-	width: 100%;
 	border: 10px solid hsl(32, 38%, 84%);
     box-shadow: 0 0 15px 0 hsla(32, 38%, 84%, 0.75);
     margin: 0 0 0 30px;
@@ -724,7 +727,7 @@ h1.title{
 
 /* info recipe */
 .info-recipe{
-	padding: 40px 0;
+	padding: 50px 0;
 }
 .info-recipe figure{
 	float: right;
@@ -742,7 +745,7 @@ h1.title{
 .info-recipe .video-recipe li{
 	float: right;
 	width: 49%;
-	padding: 0 15px;
+	padding: 0 0 0 20px;
 }
 .info-recipe .video-recipe li a{
 	padding: 0;
@@ -781,6 +784,9 @@ h1.title{
 	position: relative;
 	border: 0;
 }
+.page-header .post-thumbnail{
+	position: relative;
+}
 .style-v2 .page-header .post-thumbnail,
 .style-v3 .page-header .post-thumbnail{
 	 bottom: 0;
@@ -790,6 +796,15 @@ h1.title{
     right: 0;
     top: 0;
     height: auto;
+}
+.page-header .post-thumbnail:after{
+	content:"";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.45;
 }
 .page-header .post-thumbnail img{
 }

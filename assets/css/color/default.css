@@ -1,14 +1,17 @@
-/* 
-==========================================================================
+/* ==========================================================================
 
 Author: mTheme
+Author URI: http://themeforest.net/user/mtheme_market
+Version: 1.0
+
 
 Content Tabel
 +---------------+
 
--General Classes
--Elements
--Common-Stuff
++ Background Color
++ Text Color
++ Border Color
++ Font Family
 
 ========================================================================== */
 
@@ -23,7 +26,9 @@ body:before,
 .style-v2 .navbar-toggle .icon-bar,
 .galleries .gallery-item figure .gallery-icon a,
 .entry-meta:after,
-.style-v3 .header-inner{
+.style-v3 .header-inner,
+.page-header .post-thumbnail:after,
+#banner:after{
 	background-color: #000; 
 }
 .footer-info .social li a,
@@ -60,7 +65,7 @@ body:before,
 body,
 .sidebar .widget,
 .sidebar .widget a{
-	color: #666666;
+	color: #5c5c68;
 }
 .navbar-nav > li .mega-menu-inner a,
 .navbar-nav > li .mega-menu-inner,

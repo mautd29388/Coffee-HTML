@@ -1,18 +1,23 @@
-/* 
-==========================================================================
+/* ==========================================================================
 
 Author: mTheme
+Author URI: http://themeforest.net/user/mtheme_market
+Version: 1.0
+
 
 Content Tabel
 +---------------+
 
--General Classes
--Elements
--Common-Stuff
+* body
+	+ Header / #header
+	+ Main Content / #main-content
+	+ Footer / #footer
 
 ========================================================================== */
 
-
+html, body, #wrap{
+	height: 100%;
+}
 img{
 	max-width: 100%;
 }

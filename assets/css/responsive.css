@@ -1,14 +1,17 @@
-/* 
-==========================================================================
+/* ==========================================================================
 
 Author: mTheme
+Author URI: http://themeforest.net/user/mtheme_market
+Version: 1.0
+
 
 Content Tabel
 +---------------+
 
--General Classes
--Elements
--Common-Stuff
+* body
+	+ Header / #header
+	+ Main Content / #main-content
+	+ Footer / #footer
 
 ========================================================================== */
 
@@ -30,8 +33,9 @@ Content Tabel
 }
 @media (min-width: 1900px) {
 	.nivo-caption-content{
-		bottom: auto;
-		top: 35%;
+		bottom: 40%;
+	    left: 35%;
+	    right: 35%;
 	}
 	.service-effect li {
 		top: 200px;
@@ -59,6 +63,9 @@ Content Tabel
 	.page-header .title{
     	bottom: 10px;
     }
+    .infoUs figure {
+	    text-align: right;
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.navbar-nav > li {
@@ -373,6 +380,9 @@ Content Tabel
     }
     .style-v2 .navbar-collapse{
     	color: #FFF;
+    }
+    .navbar-nav > li{
+    	padding-bottom: 0;
     }
 	.navbar-nav > li .mega-menu, 
 	.navbar-nav > li .dropdown{
