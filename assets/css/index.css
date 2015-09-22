@@ -15,8 +15,12 @@ Content Tabel
 
 ========================================================================== */
 
-html, body, #wrap{
+html, body{
 	height: 100%;
+}
+#wrap{
+	margin-bottom: 56px;
+	min-height: 100%;
 }
 img{
 	max-width: 100%;
@@ -68,11 +72,16 @@ h3{
 	text-transform: uppercase;
 	color: #000;
 }
+#footer{
+	height: 56px;
+	margin-top: 56px;
+}
 .copyright{
 	line-height: 56px;
 	font-size: 14px;
 	text-align: center;
 	border-top: 1px solid;
+	
 }
 @media screen and (max-width: 767px) {
 	.header{
