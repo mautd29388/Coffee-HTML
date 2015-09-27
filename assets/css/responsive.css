@@ -453,28 +453,28 @@ Content Tabel
 		z-index: 99;
 	}
 	#services-item li:nth-child(6n+1){
-	    left: 20%;
-	    top: 10%;
+	    left: 18%;
+	    top: 25%;
 	}
 	#services-item li:nth-child(6n+2){
-	    left: 35%;
-	    top: 75%;
+	    left: 30%;
+	    top: 50%;
 	}
 	#services-item li:nth-child(6n+3){
-	    left: 50%;
-	    top: 5%;
+	    left: 43%;
+	    top: 25%;
 	}
 	#services-item li:nth-child(6n+4){
-    	left: 60%;
-    	top: 80%;
+	    left: 56%;
+	    top: 50%;
 	}
 	#services-item li:nth-child(6n+5){
-	    left: 80%;
-	    top: 7%;
+	    left: 68%;
+	    top: 25%;
 	}
 	#services-item li:nth-child(6n+6){
-		left: 85%;
-    	top: 70%;
+	    left: 80%;
+	    top: 50%;
 	}
 	.widget-gallery ul{
 		margin: 0;
@@ -724,27 +724,31 @@ Content Tabel
     }
     #services-item li:nth-child(6n+1){
 	    left: 25%;
-	    top: 0;
+	    top: -30%;
 	}
 	#services-item li:nth-child(6n+2){
 	    left: 35%;
-	    top: 75%;
+	    top: 60%;
 	}
 	#services-item li:nth-child(6n+3){
-	    left: 50%;
-	    top: 5%;
+	    left: 45%;
+	    top: -30%;
 	}
 	#services-item li:nth-child(6n+4){
-    	left: 60%;
-    	top: 80%;
+    	left: 55%;
+    	top: 60%;
 	}
 	#services-item li:nth-child(6n+5){
-		left: 80%;
-    	top: -5%;
+		left: 65%;
+    	top: -30%;
 	}
 	#services-item li:nth-child(6n+6){
-	    left: 85%;
-	    top: 80%;
+	    left: 75%;
+	    top: 60%;
+	}
+	#services-item li.active {
+	    left: 50% !important;
+	    top: 15% !important;
 	}
 	.gallery-v1 h3.title {
 	    font-size: 18px;
